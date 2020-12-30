@@ -885,7 +885,7 @@ class _DropdownDialogState<T> extends State<DropdownDialog> {
             decoration: InputDecoration(
                 contentPadding:
                     EdgeInsets.symmetric(horizontal: 32, vertical: 12)),
-            autofocus: widget.isAutoFocus ?? false,
+            autofocus: widget.isAutoFocus ?? true,
             onChanged: (value) {
               _updateShownIndexes(value);
               setState(() {});
